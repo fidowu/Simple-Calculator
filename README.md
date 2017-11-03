@@ -1,1 +1,1 @@
-# Simple-Calculator - to run : npm start
+# Simple-Calculator - to run : >npm install >npm start
