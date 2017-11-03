@@ -1,0 +1,117 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+
+	background :  #EDEEED;
+}
+
+
+.calc-keyboard  {
+	
+	margin : 0 auto;
+	height : 500px;
+	width: 500px;
+
+	position : relative;
+
+}
+
+button {
+
+	color: black;
+	text-decoration: none;
+	background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+	padding:10px 5px;
+	text-align: center;
+	letter-spacing: 2px;	
+		
+	
+	border: 1px solid black;
+
+	border-top:none;
+    border-left:none;
+
+
+     font-size: 12pt;
+}
+
+
+.calc-keys   {
+
+	position: absolute;
+
+	top: 72px;
+    height : 297px;
+	width: 500px;
+
+
+	display : flex;
+
+	flex-wrap : wrap;
+
+	list-style: none;
+
+}
+
+
+.calc-keys button {
+	
+	flex-grow : 0;
+
+	flex-shrink :  0;
+
+	flex-basis : 25%;
+
+}
+
+.calc-keys .key-0 {
+
+  flex:2;
+	
+}
+
+.result-bar {
+
+	position: absolute;
+font-size: 3.5vw;
+	top: 10px;
+    height : 35px;
+	width: 500px;
+
+	text-align: right;
+	padding: 10px;
+	font-size: 16pt;
+
+	background: black;
+	color: #fff;
+
+}
+
+.values-entered{
+
+	position: absolute;
+	top:  45px;
+
+	height : 27px;
+	width: 500px;
+	text-align: right;
+	padding: 10px;
+
+	font-size: 10pt;
+
+	border: 1px solid black;
+	background: black;
+	color: #fff;
+}
+
+
+.calc-keys button:nth-child(4n), button:last-child {
+ 			background: #f98110;
+            color: #fff;
+ }
+
+.calc-keys button:nth-child(4n+1){
+
+            border-left: 1px solid black;
+}
